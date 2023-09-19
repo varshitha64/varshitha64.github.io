@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>varshitha - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 90px;
+            background-color: rgb(18, 18, 69);
+            ;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 226)
+             font-size: 1.04rem;
+        }
+
+        main hr{
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+        }
+
+        .rightSection img {
+            width: 80%;
+        }
+
+
+        .purple {
+            color: rgb(82, 37, 124);
+        }
+
+        #element {
+            color: rgb(82, 37, 124);
+        }
+        .SecondSection{
+            max-width: 80vw;
+            margin: auto;
+            height: 60vh;
+        }
+
+        .SecondSection h1{
+            font-size: 1.9rem;
+            color: rgb(82, 37, 124);
+        }
+
+        .SecondSection p{
+            font-size: 1.5rem;
+            margin: 30px;
+        }
+
+        .SecondSection p{
+            font-size: 1.5rem;
+       }
+
+        .Thirdsection{
+            max-width: 80vw;
+            margin: auto;
+            height: 70vh;
+        }
+
+        .Thirdsection h1{
+            font-size: 1.9rem;
+            color: rgb(82, 37, 124); 
+        }
+
+        .Thirdsection p{
+            font-size: 1.5rem;
+
+        }
+
+        .Thirdsection h2{
+            font-size: 1.9rem;
+            color: rgb(82, 37, 124); 
+        }
+
+        .Thirdsection h3{
+            font-size: 1.9rem;
+            color: rgb(82, 37, 124); 
+        }
+
+        .Thirdsection h4{
+            font-size: 1.9rem;
+            color: rgb(82, 37, 124); 
+        }
+
+        .FourthSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 70 vh;
+        }
+
+        .FourthSection h1{
+            font-size: 1.9rem;
+            color: rgb(82, 37, 124); 
+        }
+
+        .FourthSection p{
+            font-size: 1.5rem;
+        }
+
+        .FourthSection h2{
+            font-size: 1.9rem;
+            color: rgb(82, 37, 124); 
+        }
+
+        .FifthSection{
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }       
+
+        .FifthSection h1{
+            font-size: 1.9rem;
+            color: rgb(82, 37, 124); 
+        }
+        
+
+        .FifthSection h2{
+            font-size: 1.9rem;
+            color: rgb(82, 37, 124); 
+        }
+
+        .FifthSection p{
+            font-size: 1.5rem;
+        }        
+
+        .FifthSection h3{
+            font-size: 1.9rem;
+            color: rgb(82, 37, 124); 
+        }   
+        
+        .FifthSection h4{
+            font-size: 1.9rem;
+            color: rgb(82, 37, 124); 
+        }
+
+        .FifthSection h5{
+            font-size: 1.9rem;
+            color: rgb(82, 37, 124); 
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            padding: 2vw 4vw;
+            width: 90%;
+            max-width: 600px;
+            border-radius: 10px;
+        }
+
+        form h5{
+            color: #555;
+            font-weight: 800;
+            margin-bottom: 20px;
+            float: right;
+        }
+
+        form input, form textarea{
+            border: 0;
+            margin: 10px;
+            padding: 20px;
+            outline: none;
+            background: #f5f5f5;
+            font-size: 16px;
+        }
+
+        form button{
+            padding: 15px;
+            background:#ff5367;
+            color: white;
+            font-size: 18px;
+            border: 0;
+            outline: none;
+            cursor: pointer;
+            width: 150px;
+            margin: 20px auto 0;
+            border-radius: 30px;
+        }  
+
+     </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">varshitha's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About Me">About Me</a></li>
+                    <li><a href="#Education">Education</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Contact Me">contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple"> varshitha</span>
+                <div>and I am a Passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="varsha...jpeg" alt="">
+            </div>
+        </section>
+<hr>
+        <section class="SecondSection">
+            <h1 id="About Me">About Me</h1> 
+            <p>Hello. I'm varshitha Thudumu a ambitious 4th-year BTect Student Pursuing a degree in CSE(Artificial Intelligence & Machine Learning) under JNTUH affiliated College. My academic journey has been a transformative experience, equipping me with both technical expertise and a deep understanding of the ever-evolving World of Technology.</p>
+            <p>Throughout my bTech journey, I have acquired proficiency in Various technical domains, Including Python,Java,HTML, SQL..etc.These Skills have been honed through hands-on projects,Collaborative assignments,and Internships, allowing me to tackle complex challenges With confidence. With graduation on the horizon. I am eagerly preparing to transition in to the professional realm.</p>
+                  
+        </section>
+
+<hr>
+        <section class="Thirdsection">
+            <h1 id="Education">Education</h1>
+<br>
+            <p>JNTUH affiliated College</p>
+<br>
+            <h2>Degree :</h2>
+<br>
+            <p>Bachalor of Technology(BTech) in Computer Science Engineering(AIML)</p>
+<br>
+            <h3>Expected Graduation :</h3>
+<br>
+            <p>August 2024</p>
+<br>
+            <h4>Current CGPA :</h4>
+<br>
+            <p>6.8</p>
+        </section>
+<hr>
+        <section class="FourthSection">
+            <h1 id="Skills">Technical Skills</h1>
+            <p>.C</p>
+            <p>.Java</p>
+            <p>.Python</p>
+            <p>.CSS</p>
+            <p>.Java Script</p>
+            <p>.SQL</p>
+            <p>.HTML</p>
+<br>
+            <h2>Soft Skills</h2>
+            <p>.Communication</p>
+            <p>.Teamwork</p>
+            <p>.Time management</p>
+            <p>.Problem Solving</p>
+        </section>
+<hr>
+        <section class="FifthSection">
+            <h1 id="Contact Me">Contact Me</h1>
+<br>
+            <h2>Email :</h2>
+            <p>thudumuvarshitha@gmail.com</p>
+<br>
+            <h3>Phone no : </h3>
+            <p>8688466910</p> 
+<br>
+            <h4>Address :</h4>
+            <p>West Marredpally,
+                Aswini Colony,Secunderabad, 500026.</p>
+    <div class="Contact-form">
+            <h5><form action="mailto:your.email@example.com" method="Post" enctype="text/plain">
+                <label for="name"></label>
+            <input type="text" id="name" placeholder="Your Name">
+            <input type="email" id="email" placeholder="Email id">
+            <input type="text" id="Phone" placeholder="Phone no">
+            <textarea id="message" placeholder="Type Your Message"></textarea>
+            <button type="submit">Send</button>
+        </form></h5>
+    </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Graphic Designer', 'Web Designer', 'Video Editor'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
